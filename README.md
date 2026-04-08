@@ -1,10 +1,11 @@
 ✈️ Triviana
 Journey Beyond Borders
-A full-stack, AI-powered travel booking platform for flights, hotels, holiday packages, buses & trains — built with React, Node.js, and MongoDB.________________________________________
+A full-stack, AI-powered travel booking platform for flights, hotels, holiday packages, buses & trains — built with React, Node.js, and MongoDB.
+
 🌍 What is Triviana?
 Triviana is a production-grade travel booking web app inspired by platforms like MakeMyTrip and Cleartrip. It combines smart UI design, a RESTful backend, and an AI-powered travel assistant to offer a seamless end-to-end trip planning and booking experience.
 Whether you're booking a last-minute domestic flight, planning a monsoon holiday package, or searching for international stays — Triviana handles it all from a single, beautifully designed interface.
-________________________________________
+
 🚀 Key Features
 🤖 Diya AI — Intelligent Travel Assistant
 A built-in AI chat assistant that helps users plan trips, compare destinations, suggest packages, and answer travel queries in real time.
@@ -32,7 +33,7 @@ A built-in AI chat assistant that helps users plan trips, compare destinations, 
 🛠️ Admin Dashboard
 •	Full CRUD for flights, hotels, packages, rooms & users
 •	Review and booking management
-________________________________________
+
 🧱 Tech Stack
 Layer	Technology
 Frontend	React 18, Vite, Tailwind CSS, Redux Toolkit
@@ -43,7 +44,7 @@ Payments	Razorpay
 Media Storage	Cloudinary
 Email	Nodemailer
 Rate Limiting	express-rate-limit
-________________________________________
+
 📁 Project Structure
 triviana/
 ├── client/                      # React Frontend (Vite + Tailwind)
@@ -70,7 +71,7 @@ triviana/
         ├── models/              # User, Hotel, Flight, Booking, Payment...
         ├── routes/              # All API routes
         └── utils/               # ApiError, ApiResponse, asyncHandler...
-________________________________________
+
 ⚙️ Getting Started
 Prerequisites
 •	Node.js v18+
@@ -121,13 +122,13 @@ npm run dev
 npm run dev
 Frontend runs on http://localhost:5173
 Backend runs on http://localhost:5000
-________________________________________
+
 📸 App Preview
 Hero Section	Domestic Flights	International Routes
 Maldives, Swiss Alps & more	Mumbai → Goa, Delhi, Bengaluru...	Dubai, Singapore, Paris, NYC...
 Holiday Packages	Group Tours	Seasonal Deals
 Nepal, Maldives, Bhutan...	Rajasthan, Kerala, Himalayan...	Summer, Monsoon, Winter, Festive
-________________________________________
+
 🔗 API Endpoints (Overview)
 POST   /api/auth/register        # Register new user
 POST   /api/auth/login           # Login
@@ -144,7 +145,7 @@ POST   /api/payments/verify      # Verify payment
 
 GET    /api/admin/users          # Admin: all users
 PATCH  /api/admin/hotels/:id     # Admin: update hotel
-________________________________________
+
 🤝 Contributing
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 1.	Fork the repo
@@ -152,10 +153,10 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 3.	Commit your changes: git commit -m 'Add your feature'
 4.	Push to the branch: git push origin feature/your-feature
 5.	Open a pull request
-________________________________________
+
 📄 License
 This project is open source and available under the MIT License.
-________________________________________
+
 Built with ❤️ for travelers who dare to explore the world.
 ⭐ Star this repo if you found it helpful!
 
