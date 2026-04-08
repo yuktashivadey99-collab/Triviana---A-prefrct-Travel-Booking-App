@@ -1,0 +1,26 @@
+import mongoose from "mongoose";
+const packageSchema = new mongoose.Schema({
+  title: { type: String, required: true },
+  slug: String,
+  description: String,
+  destination: { type: String, required: true },
+  country: { type: String, default: "India" },
+  images: [{ url: String, public_id: String }],
+  duration: { nights: Number, days: Number },
+  price: { adult: { type: Number, required: true }, child: Number, infant: Number },
+  originalPrice: Number,
+  discountPercent: { type: Number, default: 0 },
+  category: { type: String, enum: ["adventure","beach","cultural","honeymoon","family","pilgrimage","wildlife","luxury"], default: "cultural" },
+  inclusions: [String],
+  exclusions: [String],
+  itinerary: [{ day: Number, title: String, description: String, activities: [String] }],
+  highlights: [String],
+  avgRating: { type: Number, default: 0 },
+  totalReviews: { type: Number, default: 0 },
+  featured: { type: Boolean, default: false },
+  trending: { type: Boolean, default: false },
+  isActive: { type: Boolean, default: true },
+  tags: [String],
+  totalBookings: { type: Number, default: 0 },
+}, { timestamps: true });
+export const Package = mongoose.model("Package", packageSchema);
